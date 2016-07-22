@@ -1,0 +1,23 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	makefile	/^CC = g++$/;"	m
+CFLAGS	makefile	/^CFLAGS = -c -std=c++11$/;"	m
+DEBUG	makefile	/^DEBUG = -g$/;"	m
+FFT	polynomial.cpp	/^vector<complex<double> > polynomial::FFT(const polynomial& P,size_t n)$/;"	f	class:polynomial
+OBJS	makefile	/^OBJS = polynomial.o source.o$/;"	m
+POLYNOMIAL_H	polynomial.h	2;"	d
+coefficient	polynomial.h	/^    vector<double> coefficient;         $/;"	m	class:polynomial
+degree	polynomial.h	/^    size_t degree; $/;"	m	class:polynomial
+dft	polynomial.h	/^    vector< complex<double> >  dft;$/;"	m	class:polynomial
+main	source.cpp	/^int main()$/;"	f
+pi	polynomial.cpp	/^const double pi = 4*atan(1);$/;"	v
+polynomial	polynomial.cpp	/^polynomial::polynomial():degree(0),coefficient(1,0)$/;"	f	class:polynomial
+polynomial	polynomial.cpp	/^polynomial::polynomial(const vector<double>& v):coefficient(v)$/;"	f	class:polynomial
+polynomial	polynomial.cpp	/^polynomial::polynomial(size_t n):degree(n),coefficient(pow2_roundup(n),0)$/;"	f	class:polynomial
+polynomial	polynomial.h	/^class polynomial$/;"	c
+pow2_roundup	polynomial.cpp	/^size_t polynomial::pow2_roundup(size_t num)$/;"	f	class:polynomial
+set_dft	polynomial.cpp	/^void polynomial::set_dft()$/;"	f	class:polynomial
